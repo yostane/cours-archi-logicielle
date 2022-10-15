@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarchi_logicielle=self.webpackChunkarchi_logicielle||[]).push([[3887],{5863:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/cours-archi-logicielle/blog/tags/hello","allTagsPath":"/cours-archi-logicielle/blog/tags","count":2}')}}]);

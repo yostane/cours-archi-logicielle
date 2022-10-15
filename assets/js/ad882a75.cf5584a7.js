@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarchi_logicielle=self.webpackChunkarchi_logicielle||[]).push([[1806],{5812:l=>{l.exports=JSON.parse('{"label":"docusaurus","permalink":"/cours-archi-logicielle/blog/tags/docusaurus","allTagsPath":"/cours-archi-logicielle/blog/tags","count":4}')}}]);
