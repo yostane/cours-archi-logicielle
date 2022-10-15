@@ -1,6 +1,7 @@
 # Website
 
-![ci workflow badge](https://github.com/yostane/cours-archi-logicielle/actions/workflows/ci.yml/badge.svg)
+![GHaction deploy](https://github.com/yostane/cours-archi-logicielle/actions/workflows/deploy.yml/badge.svg)
+![GHaction test deply](https://github.com/yostane/cours-archi-logicielle/actions/workflows/test-deploy.yml/badge.svg)
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
