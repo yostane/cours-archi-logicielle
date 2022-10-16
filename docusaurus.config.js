@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Cours d'architecture logicielle",
+  title: "Architecture logicielle",
+  tagline: "Cours d'introduction à l'architecture logicielle",
   url: "https://yostane.github.io",
   baseUrl: "/cours-archi-logicielle/",
   onBrokenLinks: "throw",

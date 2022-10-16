@@ -1,0 +1,22 @@
+---
+sidebar_position: 3
+---
+
+# Projet
+
+## Sujet 1
+
+Rédiger un document d'architecture logicielle pour un TP que vous avez déjà réalisé.
+
+## Sujet 2
+
+Rédiger un document d'architecture logicielle pour une application complexe et complète base sur le [modèle suivant](https://github.com/bflorat/modele-da).
+
+Exemples:
+
+- Application de mailing.
+- Système de billetterie avec génération de code-barres sur le mobile.
+- Système de contrôle de la maison à distance.
+- Site de vente en ligne.
+- Jeu vidéo compétitif en ligne de type MOBA.
+- 
