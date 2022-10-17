@@ -21,10 +21,10 @@ Afin d'avoir une progression qui a du sens, j'ai divisé les concepts en trois �
 
 - Clean Code
 - MVC et Architectures multi-couches
-- Micro-services
-- Serverless
-- MVVM
-- Machine à états
+- Docker, Kubernetees, OpenShift
+- Cloud Native Computing Foundation
+- Micro-services et Serverless
+- MVVM et machine à états
 
 ## Etape 3
 
@@ -34,3 +34,11 @@ Afin d'avoir une progression qui a du sens, j'ai divisé les concepts en trois �
 - Bases de la Cryptographie: chiffrement symétrique et asymétrique
 - OWASP et leurs top 10
 - OpenID connect et OAuth
+
+## Autres
+
+- La suite Elastic (Kibana, Logstash)
+- https://www.archunit.org/ et https://archunitnet.readthedocs.io/en/latest/
+- https://www.architecturalkatas.com/
+- Diagrams as Code (https://blog.stephane-robert.info/post/devops-diagram-as-code/ et https://diagrams.mingrammer.com/)
+- Outils indispensable pour un architecte (https://softwarearchitecture.tools/)
