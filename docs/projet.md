@@ -6,11 +6,13 @@ sidebar_position: 3
 
 ## Sujet 1
 
-Rédiger un document d'architecture logicielle pour un TP que vous avez déjà réalisé.
+Rédiger un document d'architecture logicielle pour un TP ou projet que vous avez déjà réalisé.
 
 ## Sujet 2
 
 Rédiger un document d'architecture logicielle pour une application complexe et complète base sur le [modèle suivant](https://github.com/bflorat/modele-da).
+
+L'idée est de choisir un sujet et de collecter les besoins avec l'enseignant.
 
 Exemples:
 
@@ -19,4 +21,4 @@ Exemples:
 - Système de contrôle de la maison à distance.
 - Site de vente en ligne.
 - Jeu vidéo compétitif en ligne de type MOBA.
-- 
+- Système de gestion de la scolarité (cours, planning, notes, etc.)

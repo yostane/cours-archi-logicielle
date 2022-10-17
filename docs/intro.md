@@ -7,10 +7,19 @@ sidebar_position: 1
 ## Définitions
 
 [Architecture logicielle : l’indispensable à savoir](https://www.jesuisundev.com/architecture-logicielle/)
+
 > L’architecture logicielle c’est simplement l’organisation dans laquelle les différents composants de ton application vont être séparés et vont communiquer entre eux.
 
 [Wikipedia](https://fr.wikipedia.org/wiki/Architecture_logicielle)
+
 > L’architecture logicielle décrit d’une manière symbolique et schématique les différents éléments d’un ou de plusieurs systèmes informatiques, leurs interrelations et leurs interactions. Contrairement aux spécifications produites par l’analyse fonctionnelle, le modèle d'architecture, produit lors de la phase de conception, ne décrit pas ce que doit réaliser un système informatique mais plutôt comment il doit être conçu de manière à répondre aux spécifications. L’analyse décrit le « quoi faire » alors que l’architecture décrit le « comment le faire ».
+
+## But de l'architecture
+
+[Architecture logicielle : l’indispensable à savoir](https://www.jesuisundev.com/architecture-logicielle/)
+
+> Le but ultime de l’architecture logicielle c’est de faciliter le développement, l’évolution, le déploiement et la maintenance d’un système.
+> Une bonne architecture fait ressortir le cœur du problème à résoudre, pas les détails d’implémentation.
 
 ## Ressources
 
