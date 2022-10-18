@@ -60,7 +60,7 @@ const config = {
         title: "Cours d'architecture logicielle",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
