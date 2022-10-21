@@ -9,10 +9,27 @@ Vous pouvez vous aider de [ces outils](https://softwarearchitecture.tools/) et d
 ## Sujet 1
 
 Rédiger un document d'architecture logicielle pour un TP ou projet que vous avez déjà réalisé.
+Profitez-en aussi pour proposer une architecture améliorée par rapport à votre retour d'expérience.
+
+Diagrammes à faire obligatoirement sont listés ci-dessous:
+
+- Diagramme d'architecture d'application général et détaillé
+- Diagramme de déploiement
+- Diagramme de séquence
+- Diagramme de cas d'usage
+
+Vous êtes libre d'utiliser UML ou tout autre système de représentation commun.
+
+Voici quelques liens pour vous aider à faire les diagrammes:
+
+- [5 types de diagrammes d’architecture logicielle](https://www.lucidchart.com/blog/fr/les-diagrammes-d-architecture-logicielle)
+- [L'Art De Créer Des Diagrammes d'Architecture
+  ](https://www.infoq.com/fr/articles/crafting-architectural-diagrams/)
+- [Types de diagrammes d'architecture](https://www.edrawsoft.com/fr/architecture-diagram-types.html)
 
 ## Sujet 2
 
-Rédiger un document d'architecture logicielle pour une application complexe et complète base sur ce [modèle](https://github.com/bflorat/modele-da).
+Rédiger un document d'architecture complète pour une application complexe en se basant sur ce [modèle](https://github.com/bflorat/modele-da).
 
 L'idée est de choisir un sujet et de collecter les besoins avec l'enseignant.
 
