@@ -32,6 +32,7 @@ On vous propose de proposer une architecture logicielle pour un besoin formulé 
 
 - Rédiger un document d'architecture complète pour une application complexe en se basant sur ce [modèle](https://github.com/bflorat/modele-da).
 - Il est aussi demandé de créer des squelettes d'application.
+- Utiliser au maximum des librairies et technologies open-source.
 
 Veuillez choisir un sujet parmi les sujets ci-dessous.
 
@@ -41,7 +42,7 @@ Je souhaite développer une application qui permet aux utilisateurs d'échanger 
 Mon application proposera son propre serveur de mails. Les applications peuvent notifier les utilisateurs en temps réel dès qu'un mail arrive.
 Les différentes applications auront des interfaces graphiques et fonctionnalités similaire au maximum.
 
-Je souhaite utiliser au maximum des librairies et technologies open-source. Au niveau des standard mails, je souhaite m'orienter sur du [jmap](https://jmap.io/).
+Au niveau des standard mails, je souhaite m'orienter sur du [jmap](https://jmap.io/).
 
 ### Système de billetterie avec génération de code-barres sur le mobile
 
@@ -53,12 +54,6 @@ Un utilisateur peut se connecter via ses identifiant Google, Apple ou Facebook.
 Il est aussi demandé de développer l'application mobile qui permet de vérifier un code-barre.
 Cette application sera utilisée par les agents qui valident l'entrée au musée.
 Les utilisateurs pourront payer avec le CB, PayPal, Google Pay et Apple Pay.
-
-Je souhaite utiliser au maximum des librairies et technologies open-source.
-
-### Système de contrôle de la maison à distance
-
-Je souhaite commercialiser un système de domotique similaire à LIDL Home ou à
 
 ### Site de vente en ligne
 
@@ -76,6 +71,7 @@ Le deuxième joueur devra saisir ce code depuis son smartphone ou tablette.
 
 Développer une application qui propose les fonctions suivantes pour les enseignants et les étudiants:
 
+- Authentification gérée via KeyCloack
 - Calendrier des cours
 - Saisie et consultation des notes
 - Saisie et consultation des supports de cours et exercices
