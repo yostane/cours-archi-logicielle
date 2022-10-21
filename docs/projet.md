@@ -4,13 +4,15 @@ sidebar_position: 3
 
 # Projet
 
+Vous pouvez vous aider de [ces outils](https://softwarearchitecture.tools/) et de ce [modèle de documents](https://github.com/bflorat/modele-da).
+
 ## Sujet 1
 
 Rédiger un document d'architecture logicielle pour un TP ou projet que vous avez déjà réalisé.
 
 ## Sujet 2
 
-Rédiger un document d'architecture logicielle pour une application complexe et complète base sur le [modèle suivant](https://github.com/bflorat/modele-da).
+Rédiger un document d'architecture logicielle pour une application complexe et complète base sur ce [modèle](https://github.com/bflorat/modele-da).
 
 L'idée est de choisir un sujet et de collecter les besoins avec l'enseignant.
 
