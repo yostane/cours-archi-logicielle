@@ -1,0 +1,60 @@
+site_name: Introduction à l'architecture logicielle
+site_url: https://yostane.github.io/cours-archi-logicielle/
+repo_url: https://github.com/yostane/cours-archi-logicielle
+repo_name: yostane/cours-archi-logicielle
+edit_uri: ""
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/yostane
+
+nav:
+  - index.md
+  - projet.md
+  - sujets.md
+
+plugins:
+  - search
+
+theme:
+  logo: img/logo.jpg
+  favicon: img/logo.jpg
+  name: material
+  features:
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: deep purple
+      accent: light green
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: deep purple
+      accent: light green
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.inlinehilite
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
