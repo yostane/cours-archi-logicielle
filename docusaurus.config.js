@@ -60,7 +60,7 @@ const config = {
         title: "Cours d'architecture logicielle",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/logo.png",
         },
         items: [
           {
@@ -78,7 +78,7 @@ const config = {
       },
       footer: {
         style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} Yassine Benabbas. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Yassine Benabbas. Built with Docusaurus. Logo generated from https://hotpot.ai/`,
       },
       prism: {
         theme: lightCodeTheme,

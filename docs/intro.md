@@ -12,9 +12,11 @@ Grady Booch
 > Architecture represents the set of significant design decisions that shape the form and the function of a system , where significant is measured by cost of change.
 
 [Architecture logicielle : l’indispensable à savoir](https://www.jesuisundev.com/architecture-logicielle/)
+
 > L’architecture logicielle c’est simplement l’organisation dans laquelle les différents composants de ton application vont être séparés et vont communiquer entre eux.
 
 [Wikipedia](https://fr.wikipedia.org/wiki/Architecture_logicielle)
+
 > L’architecture logicielle décrit d’une manière symbolique et schématique les différents éléments d’un ou de plusieurs systèmes informatiques, leurs interrelations et leurs interactions. Contrairement aux spécifications produites par l’analyse fonctionnelle, le modèle d'architecture, produit lors de la phase de conception, ne décrit pas ce que doit réaliser un système informatique mais plutôt comment il doit être conçu de manière à répondre aux spécifications. L’analyse décrit le « quoi faire » alors que l’architecture décrit le « comment le faire ».
 
 ## Katas d'architecture
@@ -47,6 +49,13 @@ Sites qui proposent des sujets de katas:
 - [nealford.com](https://nealford.com/katas/)
 - [fundamentalsofsoftwarearchitecture.com](https://fundamentalsofsoftwarearchitecture.com/katas/)
 
+## But de l'architecture
+
+[Architecture logicielle : l’indispensable à savoir](https://www.jesuisundev.com/architecture-logicielle/)
+
+> Le but ultime de l’architecture logicielle c’est de faciliter le développement, l’évolution, le déploiement et la maintenance d’un système.
+> Une bonne architecture fait ressortir le cœur du problème à résoudre, pas les détails d’implémentation.
+
 ## Ressources
 
 - [Modèle de dossier d'architecture](https://github.com/bflorat/modele-da)
@@ -57,5 +66,4 @@ Sites qui proposent des sujets de katas:
 - [Conception d'architecture](http://www2.ift.ulaval.ca/~lamontagne/glo3001/documentationArchitecture.pdf)
 - [Architecture logicielle, une introduction](http://www2.ift.ulaval.ca/~lamontagne/glo3001/introArchitecture.pdf)
 - [architecture logicielle et conception avancée](https://www.ptidej.net/courses/log4430/winter12/slides/Cours%201%20-%20Conception%20architecturale%201.pdf)
-- [Améliorer les compétences et les infrastructures avec les katas d'architecture (Alexandre Touret)
-](https://www.youtube.com/watch?v=DKfR5AVD_AM)
+- [Améliorer les compétences et les infrastructures avec les katas d'architecture (Alexandre Touret)](https://www.youtube.com/watch?v=DKfR5AVD_AM)
