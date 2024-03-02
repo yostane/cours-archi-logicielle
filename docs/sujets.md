@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Sujets 
+# Sujets
 
 ## Etape 1
 

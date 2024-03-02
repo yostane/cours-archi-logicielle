@@ -19,4 +19,3 @@ Exemples:
 - Système de contrôle de la maison à distance.
 - Site de vente en ligne.
 - Jeu vidéo compétitif en ligne de type MOBA.
-- 
