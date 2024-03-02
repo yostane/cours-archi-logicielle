@@ -34,6 +34,11 @@ On vous propose de proposer une architecture logicielle pour un besoin formulé 
 - Il est aussi demandé de créer des squelettes d'application.
 - Utiliser au maximum des librairies et technologies open-source.
 
+- Application de mailing.
+- Système de billetterie avec génération de code-barres sur le mobile.
+- Système de contrôle de la maison à distance.
+- Site de vente en ligne.
+- Jeu vidéo compétitif en ligne de type MOBA.
 Veuillez choisir un sujet parmi les sujets ci-dessous.
 
 ### Application de mailing

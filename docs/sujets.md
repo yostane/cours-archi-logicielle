@@ -21,6 +21,11 @@ Afin d'avoir une progression qui a du sens, j'ai divisé les concepts en trois �
 
 - Clean Code
 - MVC et Architectures multi-couches
+- Micro-services
+- Serverless
+- MVVM
+- Machine à états
+- Architectures distribuées
 - Docker, Kubernetees, OpenShift
 - Cloud Native Computing Foundation
 - Micro-services et Serverless
@@ -38,7 +43,6 @@ Afin d'avoir une progression qui a du sens, j'ai divisé les concepts en trois �
 ## Autres
 
 - La suite Elastic (Kibana, Logstash)
-- https://www.archunit.org/ et https://archunitnet.readthedocs.io/en/latest/
-- https://www.architecturalkatas.com/
-- Diagrams as Code (https://blog.stephane-robert.info/post/devops-diagram-as-code/ et https://diagrams.mingrammer.com/)
-- Outils indispensable pour un architecte (https://softwarearchitecture.tools/)
+- [www.archunit.org](https://www.archunit.org/) et [archunitnet.readthedocs.io](https://archunitnet.readthedocs.io/)
+- [Diagrams as Code](https://blog.stephane-robert.info/post/devops-diagram-as-code/) et [autre référence](https://diagrams.mingrammer.com/)
+- [Outils indispensable pour un architecte](https://softwarearchitecture.tools/)
