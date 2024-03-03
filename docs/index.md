@@ -39,9 +39,23 @@ Katas d'architecture -> Coding dojos pour architecte
     - Choisir un formalisme. Par exemple, le [C4](https://c4model.com/)
     - Ensuite choisir un sujet de Kata
 1. Conception (1h)
-    - On peut poser des questions au modérateur
-    - Choix de technologie libre
+    - On peut poser toutes les questions qu'on veut au modérateur
+    - Choix de technologie libre et on peut prendre des htopthèses sur les technos qu'on ne connaît pas
     - Ne pas assumer le de compétence des développeurs
+1. Revue des pairs (5 min)
+    - Chaque équipe présente aux autres groupes à tour de rôle sa vision
+    - Le modérateur énonce les besoins du projet et jouera le rôle du client si besoin
+    - Chaque équipe choisit un représentant qui se charge de faire la présentation
+    - Chaque équipe répond aux questions des autres groupes
+1. Vote
+    - Chaque personne donne une note de 1 à 3 pour le projet en cours de présentation
+    - 1 (pouce levé) signifie que l'équipe maîtrise son projet et a répondu à toutes les question
+    - 3 (pouce bas) signifie que l'équipe s'est complètement trompée
+    - 2 signifie un entre deux ou il reste certains où le votant est inconfortable
+    - Exemple de critères d'évaluation (par exemple en axant sur la simplicité, évolutivité et adaptabilité)
+1. Changer les équipes et refaire l'exercice.
+
+- Il est aussi possible de contextualiser et d'adapter (par exemple en donnant des retours d'expérience d'autres projets)
 
 Sites qui proposent des sujets de katas:
 
