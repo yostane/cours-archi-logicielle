@@ -38,7 +38,7 @@ Katas d'architecture -> Coding dojos pour architecte
     - Prendre de quoi noter. Pas besoin d'un ordinateur
     - Choisir un formalisme. Par exemple, le [C4](https://c4model.com/)
     - Ensuite choisir un sujet de Kata
-1. Conception (1h)
+1. Conception (45m-1h)
     - On peut poser toutes les questions qu'on veut au modérateur
     - Choix de technologie libre et on peut prendre des htopthèses sur les technos qu'on ne connaît pas
     - Ne pas assumer le de compétence des développeurs
