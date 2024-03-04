@@ -4,9 +4,10 @@ sidebar_position: 1
 
 # Introduction
 
-![logo](img/logo.jpg)
-
-Logo généré avec [firefly.adobe.com](https://firefly.adobe.com/)
+<figure markdown="span">
+  ![logo](img/logo.jpg){ width="300" }
+  <figcaption>Logo généré avec [firefly.adobe.com](https://firefly.adobe.com/)</figcaption>
+</figure>
 
 ## Définitions
 
