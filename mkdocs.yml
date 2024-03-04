@@ -17,6 +17,7 @@ nav:
 
 plugins:
   - search
+  - glightbox
 
 theme:
   logo: img/logo.jpg
@@ -44,7 +45,6 @@ theme:
 
 markdown_extensions:
   - admonition
-  - glightbox
   - md_in_html
   - pymdownx.details
   - pymdownx.superfences
