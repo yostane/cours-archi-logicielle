@@ -6,7 +6,7 @@ sidebar_position: 1
 
 <figure markdown="span">
   ![logo](img/logo.jpg){ width="300" }
-  <figcaption>Logo généré avec [firefly.adobe.com](https://firefly.adobe.com/)</figcaption>
+  <figcaption>Logo généré avec <a href="https://firefly.adobe.com/">firefly.adobe.com</a></figcaption>
 </figure>
 
 ## Définitions
