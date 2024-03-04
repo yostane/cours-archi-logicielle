@@ -68,6 +68,12 @@ Doc sur le modèle C4:
 - [C4 model — a better way to visualise software architecture](https://medium.com/news-uk-technology/c4-model-a-better-way-to-visualise-software-architecture-df41e5ac57b8)
 - [C4 Model. My experience + Example](https://itzareyesmx.medium.com/c4-model-my-experience-example-fbcf50def540)
 
+Exemples / astuces de réalisation de Katas:
+
+- [Architecture Kata: Agile Dead Trees](https://medium.com/@goodmove_/architecture-kata-agile-dead-trees-789f16f5ac2c)
+- [Learning with Architecture Kata: Introduction](https://vampwillow.wordpress.com/2020/03/07/learning-with-architecture-kata-part-1/)
+- [architectural katas solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
+
 ## But de l'architecture
 
 [Architecture logicielle : l’indispensable à savoir](https://www.jesuisundev.com/architecture-logicielle/)
