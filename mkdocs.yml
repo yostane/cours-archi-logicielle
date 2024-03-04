@@ -11,6 +11,7 @@ extra:
 
 nav:
   - index.md
+  - katas.md
   - projet.md
   - sujets.md
 
