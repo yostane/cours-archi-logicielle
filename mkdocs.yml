@@ -12,6 +12,7 @@ extra:
 nav:
   - index.md
   - katas.md
+  - archi-doc.md
   - projet.md
   - sujets.md
 
