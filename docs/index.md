@@ -40,7 +40,7 @@ Katas d'architecture -> Coding dojos pour architecte
     - Ensuite choisir un sujet de Kata
 1. Conception (45m-1h)
     - On peut poser toutes les questions qu'on veut au modérateur
-    - Choix de technologie libre et on peut prendre des htopthèses sur les technos qu'on ne connaît pas
+    - Choix de technologie libre et on peut prendre des hypothèses sur les technos qu'on ne connaît pas
     - Ne pas assumer le de compétence des développeurs
 1. Revue des pairs (5 min)
     - Chaque équipe présente aux autres groupes à tour de rôle sa vision
@@ -62,6 +62,11 @@ Sites qui proposent des sujets de katas:
 - [architecturalkatas.com](https://www.architecturalkatas.com/index.html)
 - [nealford.com](https://nealford.com/katas/)
 - [fundamentalsofsoftwarearchitecture.com](https://fundamentalsofsoftwarearchitecture.com/katas/)
+
+Doc sur le modèle C4:
+
+- [C4 model — a better way to visualise software architecture](https://medium.com/news-uk-technology/c4-model-a-better-way-to-visualise-software-architecture-df41e5ac57b8)
+- [C4 Model. My experience + Example](https://itzareyesmx.medium.com/c4-model-my-experience-example-fbcf50def540)
 
 ## But de l'architecture
 
