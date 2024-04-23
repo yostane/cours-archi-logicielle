@@ -365,3 +365,87 @@ modèles d'accès pour voir quelle BDD est repondras au mieux a notre besion.
 ### La migration
 
 Aux moment de migrer il faudras le faire service par service et tester tout du long. cela pour verifier que la nouvelle BDD seras meilleur que l'ancienne
+
+## Les CDNs (Lucas)
+
+[Source](https://www.cloudflare.com/fr-fr/learning/cdn/what-is-a-cdn/)
+
+![image cdn](https://cf-assets.www.cloudflare.com/slt3lc6tev37/7Dy6rquZDDKSJoeS27Y6xc/4a671b7cc7894a475a94f0140981f5d9/what_is_a_cdn_distributed_server_map.png)
+
+## JWT (JsonWebToken) (Thomas)
+
+### Qu'est qu'un JWT ?
+
+Une methode qui permet de transmettre des informations entre plusieurs parties sous formes d'objet JSON
+
+### Structure du JWT
+
+- Header
+- Payload
+- Signature
+
+Tous ces champs sont en base64 et separé par des points
+
+### Structure du Header
+
+- Type de token (en l'ocuurence JWT)
+- Algorithme utilisé (SHA256, RSA, HMAC, ...)
+
+### Structure du Payload
+
+- Tout les claims dont nous avons besoin (En general, notre user et quelques données necessaires)(Trois types de claim : Public, Private et Registered)
+
+### Structure de la Signature
+
+- 2 types de signature : Symétrique et Asymétrique
+
+#### Signature symétrique : Une clé privée est connu et partagé entre l'émetteur et le receveur, l'émetteur signe avec cette clé et le receveur valide avec cette meme clé. (HMAC, HS256). La signature symétrique est rapide et simple mais induit le partage de la clé privée
+
+#### Signature asymétrique : Une clé privé est détenu par l'émetteur seulement avec laquelle il signe. Une clé publique est envoyé au receveur avec le token signé et le receveur valide la jwt avec la clé publique. La signature asymétrique evite le partage de la clé privée mais est plus longue en contrepartie
+
+### Utilisation des JWT
+
+- Authentification
+- Autorisation
+- Echange d'informations
+
+### Exemple d'utilisation d'un JWT
+
+- Le user se log
+- Le serveur valide le login puis crée un token signé avec les details du user qu'il renvoie à celui-ci
+- Le user l'utilise pour acceder au diverses ressources en le mettant dans le HTTP Header
+
+### Cas d'utilisation
+
+- OAuth2
+- OpenID
+
+### Cas où le JWT n'est pas recommandé
+
+- Partage de données sensibles
+- Gerer les sessions utilisateurs(car un JWT est stateless donc revoquer un acces peu etre compliqué)
+
+### Vulnerabilités du JWT
+
+- Token hijacking pour imiter un utilisateur
+- Cryptographic weakness si l'algo de hash est faible. Un brute force pourrait crack la signature du token
+
+### Pour réduire les risques
+
+- Utiliser des temps d'expiration rapide si possible
+- Utiliser une signature forte
+- Stocker les tokens et invalidez les tokens qui ont fuité
+
+### Avantages
+
+- Pas d'enregistrement nécessaires côté serveur
+- Indépendant
+
+### Inconvenient
+
+- Vulnerable au vol car peut donner un acces complet au ressources
+- Performance dégradé si le payload est trop volumineux
+
+### Résumé
+
+- Les JWTs permettent l'authentification, l'autorisation et l'échange d'informations
