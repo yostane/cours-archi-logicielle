@@ -55,6 +55,23 @@ Exemples / astuces de réalisation de Katas:
 - [Learning with Architecture Kata: Introduction](https://vampwillow.wordpress.com/2020/03/07/learning-with-architecture-kata-part-1/)
 - [architectural katas solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
 
+## Exemples
+
+[Who's Your Daddy?](https://www.architecturalkatas.com/kata.html?kata=WhosYourDaddy.json)
+
+Who's Your Daddy?
+
+Organization wants to build the world's largest genealogical graph in history
+
+Requirements: data is graph-like, open-ended, and must be viewable and searchable over a variety of technology platforms (web, mobile, etc); API allowing third-party access to all of the data; Facebook integration; historical records (census, marriage, death, parish records, etc) are being added by teams of people in the field--each record must be viewed/transcribed and scanned twice and verified
+
+Users: millions of users, hundreds/thousands of third-party applications
+
+<figure markdown="span">
+  ![System context C4 diagram](./img/daddy-system-context.drawio.svg)
+  <figcaption>Geneo4all System context C4 diagram</figcaption>
+</figure>
+
 ## Ressources
 
 - [Améliorer les compétences et les infrastructures avec les katas d'architecture (Alexandre Touret)](https://www.youtube.com/watch?v=DKfR5AVD_AM)
