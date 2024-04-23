@@ -58,4 +58,4 @@ query {
 
 ### Experimenter
 
-Diriger vous vers l'[API GraphQL d'Atlassian](https://hello.atlassian.net/gateway/api/graphql)
+Dirigez-vous vers l'[API GraphQL d'Atlassian](https://hello.atlassian.net/gateway/api/graphql)
