@@ -1,6 +1,6 @@
 # Exposés 23 24
 
-## GraphQL (par Tom Balieu)
+## GraphQL (par Tom)
 
 Alternative au APIs REST et approche moderne de déliverance des données.
 
@@ -59,3 +59,127 @@ query {
 ### Experimenter
 
 Dirigez-vous vers l'[API GraphQL d'Atlassian](https://hello.atlassian.net/gateway/api/graphql)
+
+## How Google/Apple Pay work (Julian)
+
+### Fonctionnement de l'Apple Pay
+
+Apple Pay est système existant depuis 2013, permettant de pouvoir utiliser des cartes à l'aide de son téléphone, notamment des cartes bancaires. Cela fonctionne en utilisant le concept de tokenization.
+Dans un premier temps, lorsque vous allez rentrer vos informations bancaire dans votre device Apple, dans ces informations ce qui va nous intéresser c'est le PAN (numéro à 16 chiffres ou 19 suivant la carte, qui est au recto de votre carte bancaire).
+Après avoir saisi ces informations, le PAN va être enregistré sur un serveur sécurisé de Apple. Ensuite ce PAN va être vérifier par la banque puis à l'aide du TSP, un token va être ressorti.
+Ce token va être renvoyer au device Apple et va être stocké dans un élément sécurisé du device. Cet ensemble (élément sécurisé + token) s'appelle DAN.
+
+Après avoir enregistrer votre carte, le paiement fonctionne à l'aide du système NFC du device.
+Lorsque vous approcher votre téléphone du TPE, à l'aide du NFC, le DAN va être envoyé au TPE, puis le TPE va communiquer avec la banque pour communiquer le DAN. Après vérification du token par la banque et par le moyen de paiement (visa, mastercard...), il va y avoir détokenisation à l'aide de TSP, puis le paiement s'effectuera avec les infos détokenisées.
+
+### Fonctionnement Google Pay
+
+ Google Pay, ou plutôt google wallet, existe depuis 2014. Anciennement android Pay, le fonctionnement de Google Pay est pratiquement le même que celui d'Apple Pay. Il y a quelques différences entre les 2 systèmes.
+Premièrement, le token généré à partir des informations bancaires, sur android, n'est pas stocké dans un élément sécurisé comme pour un device Apple. Le token va être stocké directement dans l'application Google Wallet.
+Deuxièmement, ce même token va être stocké sur un serveur de Google à la différence de Apple qui eux ne stockent pas cette information sur leur serveur.
+
+Pour le paiement, le fonctionnement est similaire à celui d'Apple, à la différence qu'ils utilisent un système de HCE, (Host Card Emulation) avec le token récupérer du serveur ou de l'app.
+
+## Comment fonctionne Git ? (Hugo)
+
+Tout d'abord, notre code réside non pas dans 2, mais 4 endroits différents :
+
+| Endroit | Description |
+| -- | -- |
+| Espace de travail | Dossier courant de notre projet |
+| Aire de Staging | Endroit temporaire où les changements de nos fichiers sont enregistrés |
+| Dépôt local | Dépôt de nos changements validés uniquement présent sur notre ordinateur |
+| Dépôt distant | Serveur (comme GitHub) pour partager et sauvegarder notre code |
+
+### Déroulé
+
+La plupart des commandes git déplacent notre code entre ces 4 endroits:
+
+```mermaid
+sequenceDiagram
+participant A as Espace de travail
+participant B as Aire de staging
+participant C as Dépôt local
+participant D as Dépôt distant
+D->>C: git clone
+C->>A: git checkout
+A->>B: git add
+B->>C: git commit
+C->>D: git push
+D->>A: git pull
+```
+
+- [**git clone**](https://git-scm.com/docs/git-clone/fr) clone un répertoire distant en local, nous permettant de modifier ses fichiers dans notre espace de travail
+
+- [**git checkout**](https://git-scm.com/docs/git-checkout/fr) bascule sur une autre branche ou restaure un espace de travail
+
+- [**git add**](https://git-scm.com/docs/git-add/fr) ajoute le contenu des fichiers modifiés dans l'aire de staging en attendant leur validation
+
+- [**git commit**](https://git-scm.com/docs/git-commit/fr) enregistre les changements de l'aire de staging dans le dépôt local
+
+- [**git push**](https://git-scm.com/docs/git-push/fr) envoie les changements locaux sur le dépôt distant
+
+- [**git pull**](https://git-scm.com/docs/git-pull/fr) récupère les changements du dépôt distant
+
+---
+
+>La commande **git pull** est en réalité l'association de deux commandes : **git fetch** et **git merge**
+
+```mermaid
+flowchart LR
+    id1[(Dépôt distant)]-- git pull-->id2(Espace de travail)
+    id1[(Dépôt distant)]-- git fetch -->id3[(Dépôt local)]
+    id3[(Dépôt local)]-- git merge -->id2(Espace de travail)
+```
+
+- [**git fetch**](https://git-scm.com/docs/git-fetch/fr) récupère les dernières mises à jour depuis le dépôt distant
+
+- [**git merge**](https://git-scm.com/docs/git-merge/fr) applique ces mises à jour au dépôt local
+
+### Git branching
+
+L'intérêt de git réside dans son système de branche : un même dépôt peut contenir plusieurs versions d'un même code, cahcune résidant dans sa propre branche.
+
+Les commandes **git checkout** (voir ci-dessus) et [**git switch**](https://git-scm.com/docs/git-switch) permettent de naviguer entre ces branches.
+
+```mermaid
+flowchart LR
+commit4-->commit1A-->commit2A~~~id2{{Branch A}}
+commit1-->commit2-->commit3-->commit4-->commit5-->commit6~~~id1{{Main branch}}
+commit2A-- git switch -->commit6
+commit6-->commit2A
+```
+
+#### Pratiques
+
+On rencontre courramment différents noms de branches, chacun correspondant à un environnement précis :
+
+- **main ou master** : production
+- **develop** : développement
+- **feature** : fonctionnalité qui sera fusionnée sur develop, puis sur main/master
+- **hotfix** : qui vise à corriger un souci sur la main/master
+- etc...
+
+### Conflits
+
+Imaginons un cas dans lequel j'ai créé une branche depuis la develop, mais que celle-ci a évolué entretemps :
+
+```mermaid
+flowchart LR
+    commit4-->commit1A-->commit2A~~~id2{{feature/ft-mafeature}}
+    commit1-->commit2-->commit3-->commit4-->commit5-->commit6~~~id1{{develop}}
+```
+
+Pour fusionner ma branche et la redescendre dans develop, je vais devoir intégrer son historique dans ma branche avec un **rebase** ou un merge de **develop** dans ma branche, ce qui me donnera l'historique local suivant au niveau de ma feature :
+
+```mermaid
+flowchart LR
+    commit4-->commit5-->commit6-->commit1A-->commit2A~~~id2{{feature/ft-mafeature}}
+```
+
+Je peux ensuite la fusionner dans develop, ce qui à terme donnera
+
+```mermaid
+flowchart LR
+    commit4-->commit5-->commit6-->commit1A-->commit2A~~~id2{{develop}}
+```
