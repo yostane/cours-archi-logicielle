@@ -57,9 +57,9 @@ Exemples / astuces de réalisation de Katas:
 
 ## Exemples
 
-[Who's Your Daddy?](https://www.architecturalkatas.com/kata.html?kata=WhosYourDaddy.json)
+### Who's Your Daddy?
 
-Who's Your Daddy?
+[Description](https://www.architecturalkatas.com/kata.html?kata=WhosYourDaddy.json)
 
 Organization wants to build the world's largest genealogical graph in history
 
