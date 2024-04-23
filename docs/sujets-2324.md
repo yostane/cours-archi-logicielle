@@ -183,3 +183,185 @@ Je peux ensuite la fusionner dans develop, ce qui à terme donnera
 flowchart LR
     commit4-->commit5-->commit6-->commit1A-->commit2A~~~id2{{develop}}
 ```
+
+## Définition générale des propriétés ACID (Nidal)
+
+Les propriétés **ACID** sont un ensemble de propriétés qui garantissent que les transactions sont fiables.
+Cela cignifie **Atomicité**, **Cohérence**, **Isolation** et **Durabilité**.
+
+___
+
+## Atomicité (Atomicity)
+
+### Définition
+
+L'**atomicité** signifie que les transactions sont traitées comme une seule unité.
+Cela signifie que toutes les opérations d'une transaction sont effectuées ou aucune d'entre elles ne l'est.
+
+### Exemple
+
+- **Exemple 1**: Transfert d'argent entre deux comptes bancaires.
+  - **Opérations**:
+    - Débiter le compte A.
+    - Créditer le compte B.
+  - **Atomicité**: Si l'une des opérations échoue, les deux opérations sont annulées.
+
+### Remarques
+
+- L'**Atomicité** est souvent implémentée en utilisant des logs.
+
+___
+
+## Cohérence (Consistency)
+
+### Définition
+
+La **cohérence** garantit que les données sont toujours valides avant et après une transaction.
+Elles doivent respecter toutes les contraintes, les règles et les relations.
+Si une transaction viole l'intégrité des données, elle est annulée.
+
+### Exemple
+
+- **Exemple 1**: Transfert d'argent entre deux comptes bancaires.
+  - **Contrainte**: Le solde du compte ne peut pas être négatif.
+  - **Cohérence**: Si le solde du compte A est de 100€, et que l'on essaie de transférer 150€, la transaction est
+      annulée.
+
+### Remarques
+
+- La **Cohérence** est souvent implémentée en utilisant des contraintes, des règles et des relations.
+- Par exemple, les clés étrangères dans une base de données relationnelle, ou les contraintes de vérification sur les
+  champs (taille Varchar, etc...).
+
+___
+
+## Isolation
+
+### Définition
+
+L'**isolation** garantit que les transactions s'exécutent indépendamment les unes des autres.
+Cela signifie que les transactions ne peuvent pas interférer les unes avec les autres.
+
+- Le plus haut niveau d'**isolation** est souvent difficile à atteindre en raison des performances. Il consiste à ne
+  jamais permettre à deux transactions de se chevaucher. C'est ce qu'on appelle l'isolation de niveau **serializable**.
+- Il existe plusieurs niveaux d'isolation, tels que **read committed**, **repeatable read** et **serializable**.
+- Chaque niveau d'isolation a ses propres problèmes potentiels, tels que les **dirty reads**, les **non-repeatable
+  reads** et les **phantom reads**.
+
+### Dirty Read
+
+Un **dirty read** se produit lorsqu'une transaction lit des données qui ont été modifiées par une autre transaction,
+mais qui n'ont pas encore été validées.
+
+#### Exemple de cas d'utilisation
+
+La transaction A modifie une ligne où `age = 30` pour le transformer à `age = 40`, mais n'a pas encore validé la transaction (par exemple, elle doit rollback).
+La transaction B lit la ligne modifiée par la transaction A (elle reçoit `age = 40`.
+La transaction A rollback, et la ligne est restaurée à son état initial (`age = 30`) **MAIS** la transaction B a déjà lu la ligne avec le résultat modifié (`age = 40`).
+
+### Non-repeatable Read
+
+Un **non-repeatable read** se produit lorsqu'une transaction lit des données qui ont été modifiées par une autre
+transaction, puis relit ces données et obtient un résultat différent.
+
+#### Exemple de cas d'utilisation
+
+La transaction A lit une ligne où `age = 30`.
+La transaction B modifie la ligne lue par la transaction A et `age = 25`.
+La transaction A relit la ligne et obtient un résultat différent, ce qui peut causer une erreur.
+
+### Phantom Read
+
+Un **phantom read** se produit lorsqu'une transaction lit un ensemble de lignes qui satisfont une condition, puis une
+autre transaction insère une nouvelle ligne qui satisfait la même condition, et la première transaction relit les
+données et obtient un résultat différent.
+
+#### Exemple de cas d'utilisation
+
+La transaction A lit toutes les lignes où `age > 18`.
+La transaction B insère une nouvelle ligne où `age = 20`.
+La transaction A relit toutes les lignes où `age > 18` et obtient un résultat différent.
+
+### Exemple
+
+- **Exemple 1**: Transfert d'argent entre deux comptes bancaires.
+  - **Opérations**:
+    - Débiter le compte A.
+    - Créditer le compte B.
+  - **Isolation**: Si deux transactions essaient de débiter le compte A en même temps, l'une des transactions doit
+      attendre que l'autre soit terminée.
+
+## Remarques
+
+- L'**Isolation** est souvent une question de performances. Plus le niveau d'isolation est élevé, plus les performances
+  sont faibles. C'est pourquoi il est important de choisir le bon niveau d'isolation en fonction des besoins.
+
+| Niveau d'isolation | Dirty Read | Non-repeatable Read | Phantom Read |
+|--------------------|------------|---------------------|--------------|
+| Serializable       | Impossible | Impossible          | Impossible   |
+| Repeatable Read    | Impossible | Impossible          | Possible     |
+| Read Commited      | Impossible | Possible            | Possible     |
+
+___
+
+## Durabilité (Durability)
+
+### Définition
+
+La **durabilité** garantit que les données d'une transaction sont enregistrées de manière permanente.
+Cela signifie que les données ne seront pas perdues, même en cas de panne du système.
+Dans les BDDs distribuées, cela signifie que les données sont répliquées sur plusieurs nœuds.
+
+### Exemple
+
+- **Exemple 1**: Transfert d'argent entre deux comptes bancaires.
+  - **Durabilité**: Si la transaction est confirmée, les données sont enregistrées de manière permanente, même en cas
+      de panne du système. Les données ne seront pas perdues, même si un nœud tombe en panne.
+
+### Remarques
+
+- La **Durabilité** est souvent implémentée en utilisant des logs de type WAL (Write-ahead logging).
+- Les logs de type WAL sont utilisés pour enregistrer les opérations avant de les exécuter. Cela garantit que les
+  données sont enregistrées de manière permanente avant d'être exécutées.
+
+### Conclusion
+
+- Les propriétés **ACID** sont essent,ielles pour garantir que les transactions sont fiables.
+- Chaque propriété a un rôle important à jouer pour garantir la fiabilité des transactions.
+- Il est important de comprendre les propriétés **ACID** pour concevoir des systèmes fiables et robustes.
+- Les propriétés **ACID** sont souvent implémentées en utilisant des logs, des contraintes et des règles.
+- Il est important de choisir le bon niveau d'isolation en fonction des besoins pour garantir des performances
+  optimales.
+
+### Références
+
+- [URL vers la vidéo](https://www.youtube.com/watch?v=GAe5oB742dw)
+- ![Screenshot tiré de la vidéo](https://github.com/yostane/cours-archi-logicielle/assets/76656935/598a937d-efbd-48a5-a835-1d536e00fc66)
+
+## Chose DataBase (Romain)
+
+### Avant de changer de base de données
+
+vérifiez si la base actuelle est réellement insuffisante.
+il faut examinez la documentation pour identifier des ajustements possibles qui pourraient résoudre les problèmes actuels.
+
+### Migrer une base de données
+
+Migrer une base de données de production est risquée et gourmande en energie. Assurez-vous d'avoir épuisé toutes les améliorations possibles avec le système actuel avant de migrer.
+
+### Le Choix de la base de données
+
+il faut prendres des bases de données éprouvées et stables. il faut aussi faire attention aux nouvelles technologies non testées.
+
+### Lire la Documentation
+
+Pour comprendre les limitations d'une nouvelle base de données, étudiez soigneusement sa documentation, en particulier les sections sur les limites et les FAQ.
+
+### Faire de vrais tests
+
+il faut faire des environnements de test réaliste en utilisant de vrais données et
+modèles d'accès pour voir quelle BDD est repondras au mieux a notre besion.
+
+### La migration
+
+Aux moment de migrer il faudras le faire service par service et tester tout du long. cela pour verifier que la nouvelle BDD seras meilleur que l'ancienne
