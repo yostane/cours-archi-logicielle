@@ -43,6 +43,7 @@ Sites qui proposent des sujets de katas:
 - [architecturalkatas.com](https://www.architecturalkatas.com/index.html)
 - [nealford.com](https://nealford.com/katas/)
 - [fundamentalsofsoftwarearchitecture.com](https://fundamentalsofsoftwarearchitecture.com/katas/)
+- [Exemple complet et exhaustif d'un kata d'architecture dans le contexte d'une compétition](https://tekiegirl.github.io/Archangels/)
 
 Doc sur le modèle C4:
 
@@ -69,7 +70,12 @@ Users: millions of users, hundreds/thousands of third-party applications
 
 <figure markdown="span">
   ![System context C4 diagram](./img/daddy-system-context.drawio.svg)
-  <figcaption>Geneo4all System context C4 diagram</figcaption>
+  <figcaption>Geneo4all Level 1 - System context</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![System context C4 diagram](./img/daddy-container.drawio.svg)
+  <figcaption>Geneo4all Level 2 - Container diagram</figcaption>
 </figure>
 
 ## Ressources
