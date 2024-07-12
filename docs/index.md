@@ -38,3 +38,4 @@ Grady Booch
 - [Architecture logicielle, une introduction](http://www2.ift.ulaval.ca/~lamontagne/glo3001/introArchitecture.pdf)
 - [architecture logicielle et conception avancée](https://www.ptidej.net/courses/log4430/winter12/slides/Cours%201%20-%20Conception%20architecturale%201.pdf)
 - [Améliorer les compétences et les infrastructures avec les katas d'architecture (Alexandre Touret)](https://www.youtube.com/watch?v=DKfR5AVD_AM)
+- [Types de persistance pour les microservices](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/enabling-patterns.html)
