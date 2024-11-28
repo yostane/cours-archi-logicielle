@@ -67,6 +67,7 @@ target/
 
 # virtualenv
 venv/
+.venv/
 ENV/
 
 # MkDocs documentation

@@ -1,4 +1,4 @@
-# Katas d'architecture
+# Définition des Katas d'architecture
 
 Fred Brooks
 > How do we get great designers? Great designers design, of course.
@@ -55,28 +55,6 @@ Exemples / astuces de réalisation de Katas:
 - [Architecture Kata: Agile Dead Trees](https://medium.com/@goodmove_/architecture-kata-agile-dead-trees-789f16f5ac2c)
 - [Learning with Architecture Kata: Introduction](https://vampwillow.wordpress.com/2020/03/07/learning-with-architecture-kata-part-1/)
 - [architectural katas solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
-
-## Exemples
-
-### Who's Your Daddy?
-
-[Description](https://www.architecturalkatas.com/kata.html?kata=WhosYourDaddy.json)
-
-Organization wants to build the world's largest genealogical graph in history
-
-Requirements: data is graph-like, open-ended, and must be viewable and searchable over a variety of technology platforms (web, mobile, etc); API allowing third-party access to all of the data; Facebook integration; historical records (census, marriage, death, parish records, etc) are being added by teams of people in the field--each record must be viewed/transcribed and scanned twice and verified
-
-Users: millions of users, hundreds/thousands of third-party applications
-
-<figure markdown="span">
-  ![System context C4 diagram](./img/daddy-system-context.drawio.svg)
-  <figcaption>Geneo4all Level 1 - System context</figcaption>
-</figure>
-
-<figure markdown="span">
-  ![System context C4 diagram](./img/daddy-container.drawio.svg)
-  <figcaption>Geneo4all Level 2 - Container diagram</figcaption>
-</figure>
 
 ## Ressources
 

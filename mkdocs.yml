@@ -11,12 +11,16 @@ extra:
 
 nav:
   - index.md
-  - katas.md
-  - sujets-vrac.md
-  - sujets-2324.md
+  - Katas d'architecture:
+    - katas.md
+    - kata-examples.md
+  - Sujets de veille:
+    - sujets-vrac.md
+    - sujets-2324.md
   - archi-doc.md
-  - projet.md
-  - sujets.md
+  - Exemples d'exercices / projets:
+    - projet.md
+    - sujets.md
 
 plugins:
   - search
