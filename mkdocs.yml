@@ -17,6 +17,15 @@ nav:
   - Sujets de veille:
     - sujets-vrac.md
     - sujets-2324.md
+    - Sujets 24-25:
+      - 2425/adl.md
+      - 2425/unclebob.md
+      - 2425/cloud_vs_onpremise.md
+      - 2425/saas.md
+      - 2425/oidc.md
+      - 2425/kafka.md
+      - 2425/kube.md
+      - 2425/structurizr.md
   - archi-doc.md
   - Exemples d'exercices / projets:
     - projet.md
