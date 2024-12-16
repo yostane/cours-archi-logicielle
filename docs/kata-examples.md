@@ -30,7 +30,9 @@
 
 > Users: faculty, staff and student parents
 
-![TalesOfAFourthGrade](./img/TalesOfAFourthGrade.drawio.svg)
+??? Ouvrir pour voir le diagramme C4
+
+    ![TalesOfAFourthGrade](./img/TalesOfAFourthGrade.drawio.svg)
 
 ## I'll Have the BLT
 
