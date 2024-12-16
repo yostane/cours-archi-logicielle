@@ -1,6 +1,6 @@
 # Exemples de katas d'architecture logicielle
 
-### Who's Your Daddy?
+## Who's Your Daddy?
 
 [Description](https://www.architecturalkatas.com/kata.html?kata=WhosYourDaddy.json)
 
@@ -10,15 +10,17 @@
 
 > Users: millions of users, hundreds/thousands of third-party applications
 
-<figure markdown="span">
-  ![System context C4 diagram](./img/daddy-system-context.drawio.svg)
-  <figcaption>Geneo4all Level 1 - System context</figcaption>
-</figure>
+??? "Ouvrir pour voir le diagramme C4"
 
-<figure markdown="span">
-  ![System context C4 diagram](./img/daddy-container.drawio.svg)
-  <figcaption>Geneo4all Level 2 - Container diagram</figcaption>
-</figure>
+    <figure markdown="span">
+    ![System context C4 diagram](./img/daddy-system-context.drawio.svg)
+    <figcaption>Geneo4all Level 1 - System context</figcaption>
+    </figure>
+
+    <figure markdown="span">
+    ![System context C4 diagram](./img/daddy-container.drawio.svg)
+    <figcaption>Geneo4all Level 2 - Container diagram</figcaption>
+    </figure>
 
 ## TalesOfAFourthGrade
 
@@ -30,7 +32,7 @@
 
 > Users: faculty, staff and student parents
 
-??? Ouvrir pour voir le diagramme C4
+??? "Ouvrir pour voir le diagramme C4"
 
     ![TalesOfAFourthGrade](./img/TalesOfAFourthGrade.drawio.svg)
 
