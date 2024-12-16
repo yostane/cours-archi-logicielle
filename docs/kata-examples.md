@@ -31,3 +31,25 @@
 > Users: faculty, staff and student parents
 
 ![TalesOfAFourthGrade](./img/TalesOfAFourthGrade.drawio.svg)
+
+## I'll Have the BLT
+
+[Proposé par architecturalkatas.com](https://www.architecturalkatas.com/kata.html?kata=BLT.json)
+
+> A national sandwich shop wants to enable "fax in your order" but over the Internet instead (in addition to their current fax-in service)
+
+> Users: millions+
+
+> Requirements: users will place their order, then be given a time to pick up their sandwich and directions to the shop (which must integrate with Google Maps); if the shop offers a delivery service, dispatch the driver with the sandwich to the user; mobile-device accessibility; offer national daily promotionals/specials; offer local daily promotionals/specials; accept payment online or in person/on delivery
+
+| **Fonctionnalité**               | **Description**                                                                                                | **Mise en place** |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Commande de sandwich             | Estimation du temps de préparation + facturation                                                               |                   |
+| PWA responsive                   | Commande + code de récupération + heure de récupération + itinéraire + livraison si disponible                 |                   |
+| Calcul de l'itinéraire           | Intégration avec Google maps                                                                                   |                   |
+| Paiement                         | Sur place ou en ligne                                                                                          |                   |
+| Livraison                        | Envoi de notification au livreur (qui est un un interne)                                                       |                   |
+| Promotions                       | Informations renseignées par l'équipe marketing ou les managers et peuvent choisir au niveau local ou national |                   |
+| +1 millions d'utilisateurs       | Système réactif et qui se met à l'échelle                                                                      |                   |
+| Synchro commandes internet / fax | S'assure que le SI gère bien les deux types de commandes                                                       |                   |
+|                                  |                                                                                                                |                   |
