@@ -56,3 +56,7 @@
 | Promotions                       | Informations renseignées par l'équipe marketing ou les managers et peuvent choisir au niveau local ou national |                   |
 | +1 millions d'utilisateurs       | Système réactif et qui se met à l'échelle                                                                      |                   |
 | Synchro commandes internet / fax | S'assure que le SI gère bien les deux types de commandes                                                       |                   |
+
+??? "Ouvrir pour voir le diagramme C4"
+
+    ![BLT](./img/blt.drawio.svg)
