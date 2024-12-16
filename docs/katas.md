@@ -1,9 +1,11 @@
 # Définition des Katas d'architecture
 
 Fred Brooks
+
 > How do we get great designers? Great designers design, of course.
 
 Ted Neward
+
 > So how are we supposed to get great architects, if they only get the chance to architect fewer than a half-dozen times in their career?
 
 Les katas (dans les arts martiaux): transmission des technique d'un combattant à un autre [source](https://fr.wikipedia.org/wiki/Kata)
@@ -34,28 +36,39 @@ Katas d'architecture -> Coding dojos pour architecte
     - Exemple de critères d'évaluation (par exemple en axant sur la simplicité, évolutivité et adaptabilité)
 1. Changer les équipes et refaire l'exercice.
 
-- Il est aussi possible de contextualiser et d'adapter (par exemple en donnant des retours d'expérience d'autres projets)
+-   Il est aussi possible de contextualiser et d'adapter (par exemple en donnant des retours d'expérience d'autres projets)
+
+## Modèle C4
+
+Le modèle C4 est un modèle de représentation de l'architecture logicielle. Il est composé de 4 niveaux:
+
+-   Contexte système
+-   Conteneurs
+-   Composants
+-   Classes
+
+![C4 model](https://assets.icepanel.io/blog/visualizing-software-architecture-with-the-c4-model/infographic.png)
 
 ## Informations utiles
 
 Sites qui proposent des sujets de katas:
 
-- [architecturalkatas.com](https://www.architecturalkatas.com/index.html)
-- [nealford.com](https://nealford.com/katas/)
-- [fundamentalsofsoftwarearchitecture.com](https://fundamentalsofsoftwarearchitecture.com/katas/)
-- [Exemple complet et exhaustif d'un kata d'architecture dans le contexte d'une compétition](https://tekiegirl.github.io/Archangels/)
+-   [architecturalkatas.com](https://www.architecturalkatas.com/index.html)
+-   [nealford.com](https://nealford.com/katas/)
+-   [fundamentalsofsoftwarearchitecture.com](https://fundamentalsofsoftwarearchitecture.com/katas/)
+-   [Exemple complet et exhaustif d'un kata d'architecture dans le contexte d'une compétition](https://tekiegirl.github.io/Archangels/)
 
 Doc sur le modèle C4:
 
-- [C4 model — a better way to visualise software architecture](https://medium.com/news-uk-technology/c4-model-a-better-way-to-visualise-software-architecture-df41e5ac57b8)
-- [C4 Model. My experience + Example](https://itzareyesmx.medium.com/c4-model-my-experience-example-fbcf50def540)
+-   [C4 model — a better way to visualise software architecture](https://medium.com/news-uk-technology/c4-model-a-better-way-to-visualise-software-architecture-df41e5ac57b8)
+-   [C4 Model. My experience + Example](https://itzareyesmx.medium.com/c4-model-my-experience-example-fbcf50def540)
 
 Exemples / astuces de réalisation de Katas:
 
-- [Architecture Kata: Agile Dead Trees](https://medium.com/@goodmove_/architecture-kata-agile-dead-trees-789f16f5ac2c)
-- [Learning with Architecture Kata: Introduction](https://vampwillow.wordpress.com/2020/03/07/learning-with-architecture-kata-part-1/)
-- [architectural katas solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
+-   [Architecture Kata: Agile Dead Trees](https://medium.com/@goodmove_/architecture-kata-agile-dead-trees-789f16f5ac2c)
+-   [Learning with Architecture Kata: Introduction](https://vampwillow.wordpress.com/2020/03/07/learning-with-architecture-kata-part-1/)
+-   [architectural katas solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
 
 ## Ressources
 
-- [Améliorer les compétences et les infrastructures avec les katas d'architecture (Alexandre Touret)](https://www.youtube.com/watch?v=DKfR5AVD_AM)
+-   [Améliorer les compétences et les infrastructures avec les katas d'architecture (Alexandre Touret)](https://www.youtube.com/watch?v=DKfR5AVD_AM)
