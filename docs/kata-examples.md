@@ -1,5 +1,7 @@
 # Exemples de katas d'architecture logicielle
 
+[Quelques exemples de solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
+
 ## Who's Your Daddy?
 
 [Description](https://www.architecturalkatas.com/kata.html?kata=WhosYourDaddy.json)
