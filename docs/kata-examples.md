@@ -1,7 +1,7 @@
 # Exemples de katas d'architecture logicielle
 
 -   [Quelques exemples de solutions](https://www.pasqualelangella.com/architectural-katas-solutions/index.php/Main_Page)
--   [Problème architecture Kata 2023](https://github.com/wschaef/architecture-kata-2023/blob/main/input.md)
+-   [Problème architecture Kata 2023 by O'Reilly](https://github.com/wschaef/architecture-kata-2023/blob/main/input.md)
 
 ## Who's Your Daddy?
 
