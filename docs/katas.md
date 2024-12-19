@@ -49,6 +49,8 @@ Le modèle C4 est un modèle de représentation de l'architecture logicielle. Il
 
 ![C4 model](https://assets.icepanel.io/blog/visualizing-software-architecture-with-the-c4-model/infographic.png)
 
+[Le site de online.visual-paradigm.com](https://online.visual-paradigm.com/diagrams/templates/c4-model/) propose des exemples de diagrammes C4 sur différents cas d'usage. Ils peuvent servir de base pour les katas.
+
 ## Informations utiles
 
 Sites qui proposent des sujets de katas:
