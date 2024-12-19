@@ -1,3 +1,3 @@
-# Sujets de veille proposés par les étudiants
+# Accueil Veille 2425
 
 Vous pouvez consulter chaque sujet depuis le menu de navigation à gauche.
