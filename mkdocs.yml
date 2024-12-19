@@ -18,7 +18,8 @@ nav:
     - sujets-vrac.md
     - sujets-2324.md
     - Sujets 24-25:
-      - 2425/adl.md
+      - 2425/index.md
+      - 2425/adr.md
       - 2425/unclebob.md
       - 2425/cloud_vs_onpremise.md
       - 2425/saas.md
